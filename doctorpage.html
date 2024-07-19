@@ -1,0 +1,89 @@
+<?php
+	session_start();
+	require'loginconnect.php';
+	require'logoutDoctoraccount.php';
+	require'deleteDoctoraccount.php';
+	
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lankan Medical Portal</title>
+	<link rel="stylesheet" href="cgcss.css">
+	<script>
+		
+		const d = new Date();
+		document.getElementById("demo").innerHTML = d;
+	
+		 function showconfirmation() {
+          return confirm('Are you sure you want to delete this account?');
+        }
+		
+		 function showconfirmationLogout() {
+          return confirm('Do you want to logout this account?');
+        }
+		
+	</script>
+     
+</head>
+<body>
+    <header>
+	 <img rel="logo" src="..\Lankan\logo.png" class="logo" align="right" style="position: absolute; left: 0; top: 0; bottom:5; right:5; width: 90px; height:90px; ">
+        <nav>
+            <ul>
+                <li><a href="Lankan.html" target="_blank">Home</a></li>
+                <li><a href="#">Appointment</a></li>
+                <li><a href="#">Online Pharmacy</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Donation</a></li>
+            </ul>
+        </nav>
+    </header>
+	
+	<div class="container">
+	<h1>Welcome Doctor <?php session_start(); echo $_SESSION['$username'] ?></h1>
+	<p id ="demo"></p>
+	<br>
+		<form method="get" action="logoutDoctoraccount.php"> 
+			<input type="submit" name="logout" id="logout" onclick="showconfirmationLogout()" value="Log out"><br>
+		</form>
+		<form method="get" action="deleteDoctoraccount.php"> 
+			<input type="submit" name="delete" id="delete" onclick="showconfirmation()" value="Delete">
+		</form><br>
+	<center>
+		<select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+		  <option selected>Let's get started</option>
+		  <option value="1">Appoinments</option>
+		  <option value="2">General Report</option>
+		</select>
+		<select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+		  <option selected>Personal blog</option>
+		  <option value="1">Add blogs</option>
+		  <option value="3">Add videos</option>
+		</select>
+		<select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+		  <option selected>Inbox</option>
+		  <option value="1">Message  notification</option>
+		  <option value="3">Patient chat-box</option>
+		</select>
+	</center>
+	</div>
+    <footer class="footer">
+			<br>
+			<div class="flogo"><img rel = "logo" src = "..\Lankan\logo.png" class = "logo" align = "left" style="position: absolute; left: 0; top: 0; width: 140px; height: 140px;"></div>
+			<div class="social">
+				<a href="https://www.facebook.com/"><img src="..\Lankan\facebook.png" height="50" width="50"></a>
+				<a href="https://www.twitter.com/"><img src="..\Lankan\twitter.png" height="50" width="50"></a>
+				<a href="https://www.instagram.com/"><img src="..\Lankan\instagram.png" height="50" width="50"></a>
+				<a href="https://www.plus.google.com/"><img src="..\Lankan\googleplus.png" height="50" width="50"></a>
+			</div>
+			
+			<div><br><br>
+		  <p id = "para"><b>Discover a comprehensive <br>Lankan Online Medical Portal,<br> providing accessible healthcare <br>solutions at your fingertips</b></p>
+        <p>Terms of Service | Privacy Policy | Contact Us <br>Copyright © 2023 Lankan Health, LLC. All rights reserved. v21.8.0.36</p>
+		</div>
+    </footer>
+</body>
+</html>

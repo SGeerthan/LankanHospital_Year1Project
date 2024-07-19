@@ -1,0 +1,389 @@
+/* Header */
+header {
+    background-color: #f2f2f2;
+    padding: 10px;
+	height:50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-right: 10;
+    padding: 0;
+    text-align: right;
+	font-size:15px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 0px;
+	height:100%
+}
+.container button a{
+	color:black;
+	text-decoration:none;
+}
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Took this slideshow code from a youtube video */
+.slideshow {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 400px;
+    position: relative;
+}
+
+.slideshow img {
+    width: 900px;
+    height: 450px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: slide 12s infinite;
+}
+
+.slideshow img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slideshow img:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.slideshow img:nth-child(3) {
+    animation-delay: 8s;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    16.66% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    33.33% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    50% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+.btn1 {
+    font-family: Arial;
+    border: 2px solid gray;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+	cursor:pointer;
+}
+
+.btn2 {
+    font-family: Arial;
+    border: 2px solid gray;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+	cursor:pointer;
+}
+
+.btn3 {
+    font-family: Arial;
+    border: 2px solid gray;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+	cursor:pointer;
+}
+#myForm{
+	width:550px;
+	border-radius:3px;
+}
+#myForm input{
+	display:block;
+	height:30px;
+	width:80%;
+	margin:15px auto 0px auto;
+	
+}
+textarea{
+	display:block;
+	height:50px;
+	width:80%;
+	margin:15px auto 0px auto;
+}
+#myForm input[type="submit"]{
+	width:150px;
+	padding:10px;
+	font-size:10px;
+	text-transform:uppercase;
+	cursor:pointer;
+	appearance:none;
+	outline:none;
+	border:none;
+	background-color:#4f91f8;
+	border-radius:7px;
+	
+}
+#myForm input[type="reset"]{
+	width:155px;
+	padding:10px;
+	font-size:10px;
+	text-transform:uppercase;
+	cursor:pointer;
+	appearance:none;
+	outline:none;
+	border:none;
+	background-color:#4f91f8;
+	border-radius:7px;
+}
+.formbgimg {
+    background-image: url('../Lankan/loginimage2.jpg');
+	background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+	opacity:0.6;	
+}
+
+/* Footer */
+.footer {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    height: 200px;
+    position: relative;
+	width:100%;
+}
+
+.social {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+
+.social img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.logo2 {
+    top: 100;
+    right: 0;
+    left: 0;
+    bottom: 10;
+    width: 20%;
+    height: auto;
+}
+
+#para {
+    font-size: 12px;
+    position: absolute;
+    font-family: Garamond, serif;
+    text-align: left;
+}
+
+.loginContainer{
+	padding:50px;
+	border:2px solid black;
+	display:block;
+	height:300px;
+	width:40%;
+	margin:15px auto 15px auto;
+	background-image: url('../Lankan/loginimage2.jpg') ;
+	background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+	opacity:0.6;
+}
+input{
+	border-radius:3px;
+	height:30px;
+	width:65%;
+}
+button{
+	background-color: skyblue;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	font-size: 12px;
+	text-transform:uppercase;
+	appearance:none;
+	outline:none;
+	background-color:#4f91f8;
+	border-radius:7px;
+ }
+ .loginContainer a{
+	 text-decoration:none;
+ }
+ .form-select{
+	height:50px;
+    width:80%;
+	border:2px;
+	font-size:12px;
+    font-family:Monospace;
+ }
+ /* This is a source code of a webpage ,inspected and got this.*/
+.submenu ul {
+  list-style-type: none;
+  padding:100;
+  margin-left:10;
+  width:50%;
+}
+.submenu li {
+  display: none;
+}
+
+.submenu ul#dropdown li:first-child {
+  display: block;
+}
+
+.submenu ul#dropdown:hover li {
+  display: block;
+}
+
+.submenu ul#dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+.submenu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.submenu a:hover {
+  background-color: #ccc;
+}
+form p a{
+	text-decoration:none;
+}
+.container #logout{
+	
+	color:#37B9F1;
+	width:125px;
+	padding:10px;
+	font-size:10px;
+	text-transform:uppercase;
+	cursor:pointer;
+	appearance:none;
+	outline:none;
+	border:none;
+	background-color:#4f91f8;
+	border-radius:7px;
+	margin-right: 10px;
+	display: flex;
+	color: #000;
+}
+.container #delete{
+	
+	color:#37B9F1;
+	width:125px;
+	padding:10px;
+	font-size:10px;
+	text-transform:uppercase;
+	cursor:pointer;
+	appearance:none;
+	outline:none;
+	border:none;
+	background-color:#4f91f8;
+	border-radius:7px;
+	margin-right: 10px;
+	display: flex;
+	color: #000;
+}
+.loginContainer input[type="submit"]{
+	
+	width:150px;
+	padding:10px;
+	font-size:10px;
+	text-transform:uppercase;
+	cursor:pointer;
+	appearance:none;
+	outline:none;
+	border:none;
+	background-color:#4f91f8;
+	border-radius:7px;
+
+}
+/*Took this code from a instagram page*/
+*,
+*:: before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.img-gallery{ 
+	display: flex;
+	width: 80%;
+	margin: 5rem;
+	display: grid;
+	grid-template-columns:
+		repeat(auto-fit, minmax(300px, 1fr));
+		grid-auto-rows: minmax(300px, 1fr);
+		gap: 30px;
+}
+.img-gallery > img {
+	display: block;
+	max-Width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 8px;
+	transition: 0.6s ease;
+}
+
+.img-gallery img:hover {
+	scale: 0.85;
+	box-shadow: 10px 26px 60px rgba(68, 77, 136, 0.3);
+}
+.img-gallery img{
+	box-shadow:5px 10px 8px #888888;
+	flex: 1;
+	width: 100%;
+	height: auto;
+}

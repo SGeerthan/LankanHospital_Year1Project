@@ -1,0 +1,60 @@
+<?php
+
+	require 'loginconnect.php';
+	require 'process.php';
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lankan Medical Portal</title>
+	<link rel="stylesheet" href="cgcss.css">			<!--Linking CSS file-->
+ 
+</head>
+<body>
+    <header>
+	 <img rel="logo" src="..\Lankan\logo.png" class="logo" align="right" style="position: absolute; left: 0; top: 0; bottom:5; right:5; width: 90px; height:90px; ">
+        <nav>
+            <ul>
+                <li><a href="Lankan.html" target="_blank">Home</a></li>
+                <li><a href="#" target="_blank">Appointment</a></li>
+                <li><a href="#" target="_blank">Online Pharmacy</a></li>
+                <li><a href="#" target="_blank">About Us</a></li>
+                <li><a href="#" target="_blank">Contact Us</a></li>
+                <li><a href="#" target="_blank">Donation</a></li>
+            </ul>
+        </nav>
+    </header>
+	
+	<div class="loginContainer">
+	<center>
+	<h3>Login Now</h3>
+		<form action="loginconnect.php" method="POST">				<!--Used POST method because the password is sensible data-->
+		
+			<input type="text" name="username" placeholder="Enter your Username" required><br><br>
+			<input type="password" name="password" placeholder="Password" required>
+			
+			<p>Change password <a href = "updateforgetpassword.html">click here</a></p>
+			<input type="submit" id="submit" name="submitlogin" value="Login"><br><br><br>
+			<p>Don't have an account?<a href = "page1.html">Register now</a></p>
+		</form>
+	</center>
+	</div>
+	
+    <footer class="footer">
+			<br>
+			<div class="flogo"><img rel = "logo" src = "..\Lankan\logo.png" class = "logo" align = "left" style="position: absolute; left: 0; top: 0; width: 140px; height: 140px;"></div>
+			<div class="social">
+				<a href="https://www.facebook.com/"><img src="..\Lankan\facebook.png" height="50" width="50"></a>
+				<a href="https://www.twitter.com/"><img src="..\Lankan\twitter.png" height="50" width="50"></a>
+				<a href="https://www.instagram.com/"><img src="..\Lankan\instagram.png" height="50" width="50"></a>
+				<a href="https://www.plus.google.com/"><img src="..\Lankan\googleplus.png" height="50" width="50"></a>
+			</div>
+			
+			<div><br><br>
+		  <p id = "para"><b>Discover a comprehensive <br>Lankan Online Medical Portal,<br> providing accessible healthcare <br>solutions at your fingertips</b></p>
+        <p>Terms of Service | Privacy Policy | Contact Us <br>Copyright © 2023 Lankan Health, LLC. All rights reserved. v21.8.0.36</p>
+		</div>
+    </footer>
+</body>
+</html>
